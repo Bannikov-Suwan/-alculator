@@ -1,33 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int Summa (int a, int b)
-{
-	int c;
-	c = a + b;
-	return c;
-}
+int Sum (int , int );
 
-int Vichitanie (int a, int b)
-{
-	int c;
-	c = a - b;
-	return c;
-}
+int Sub (int , int );
 
-int Umnojenie (int a, int b)
-{
-	int c;
-	c = a * b;
-	return c;
-}
+int Mul (int , int );
 
-float Delenie (int a, int b)
-{
-	float c;
-	c = a / b;
-	return c;
-}
+float Del (float, float );
+
 int main ()
 {
 	setlocale (0,"");
@@ -44,22 +25,22 @@ int main ()
 		{
 			case 1:
 				{
-					cout << Summa (a, b) << endl;
+					cout << Sum (a, b) << endl;
 					break;
 				}
 			case 2:
 				{
-					cout << Vichitanie (a, b) << endl;
+					cout << Sub (a, b) << endl;
 					break;
 				}
 			case 3:
 				{
-					cout << Umnojenie (a, b) << endl;
+					cout << Mul (a, b) << endl;
 					break;
 				}
 			case 4:
 				{
-					cout << Delenie (a, b) << endl;
+					cout << Del (a, b) << endl;
 					break;
 				}
 		}
@@ -67,4 +48,32 @@ int main ()
 	system ("pause");
 	return 0;
 
+}
+
+int Sum (int a, int b)
+{
+	int c;
+	c = a + b;
+	return c;
+}
+
+int Sub (int a, int b)
+{
+	int c;
+	c = a - b;
+	return c;
+}
+
+int Mul (int a, int b)
+{
+	int c;
+	c = a * b;
+	return c;
+}
+
+float Del (int a, int b)
+{
+	float c;
+	c = a / b;
+	return c;
 }
